@@ -3,7 +3,6 @@ package com.nandkishor.todolist.db
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.nandkishor.todolist.Todo
 
 @Database(entities = [Todo::class], version = 1)
 

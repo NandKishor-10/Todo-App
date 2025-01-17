@@ -31,6 +31,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.unit.dp
+import com.nandkishor.todolist.db.Todo
 
 // Composable for input field, + button and Lazy List
 @Composable
@@ -58,9 +59,8 @@ fun TodoList(todoViewModel: TodoViewModel) {
                 shape = RoundedCornerShape(50),
                 singleLine = true,
                 label = { Text(text = "Enter a Task")},
-                modifier = Modifier.weight(1f),
-
-                )
+                modifier = Modifier.weight(1f)
+            )
 
             Spacer(modifier = Modifier.width(16.dp))
 

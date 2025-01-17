@@ -69,15 +69,10 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    // Room Database integration
-    implementation(libs.androidx.room.runtime) // Room runtime
-    implementation(libs.androidx.room.ktx)     // Room Kotlin extensions
-    ksp(libs.androidx.room.compiler)           // Room annotation processor via KSP
-
-    // Lifecycle ViewModel integration with Compose
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
-
-    implementation(libs.androidx.runtime.livedata) // For LiveData support in Compose
-
-    implementation(libs.androidx.constraintlayout.compose.android) // For ConstraintLayout support in Compose
+    implementation(libs.androidx.runtime.livedata)
+    implementation(libs.androidx.constraintlayout.compose.android)
 }

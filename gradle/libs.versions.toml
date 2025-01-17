@@ -7,13 +7,13 @@ junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.7"
-activityCompose = "1.9.3"
-composeBom = "2024.11.00"
+activityCompose = "1.10.0"
+composeBom = "2025.01.00"
 
 lifecycleViewmodelCompose = "2.8.7"      # Lifecycle ViewModel Compose version
 roomKtx = "2.6.1"                        # Room KTX version
 roomRuntime = "2.6.1"                    # Room runtime version
-runtimeLivedata = "1.7.5"                # Runtime LiveData version
+runtimeLivedata = "1.7.6"                # Runtime LiveData version
 
 
 
@@ -24,6 +24,7 @@ androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomKtx" }  # Room compiler
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }  # Room KTX extensions
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }  # Room runtime
+androidx-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "runtimeLivedata" }
 
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -39,13 +40,10 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 
-androidx-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "runtimeLivedata" }
-
-
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-ksp = { id = "com.google.devtools.ksp", version = "2.0.20-1.0.25" }  # KSP for Kotlin 2.0 and Room code generation
+ksp = { id = "com.google.devtools.ksp", version = "2.0.20-1.0.25" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
 
